@@ -52,11 +52,8 @@ const cardData = [
 
 export default function CardList() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [cards, setCards] = useState(cardData);
-  console.log(cards);
-  const totalResults = cards.length;
-  console.log(totalResults);
-  const cardsPerPage = 3;
+  const totalResults = cardData.length;
+  const cardsPerPage = 2;
 
   // Calculate the index range for the current page
   const startIndex = (currentPage - 1) * cardsPerPage;
@@ -104,7 +101,7 @@ export default function CardList() {
           ))}
         </div>
       </div>
-      <Pagination handlePageChange={handlePageChange} currentPage={currentPage} totalResults={totalResults} cardsPerPage={cardsPerPage} startIndex={startIndex}  endIndex={endIndex}/>
+      <Pagination handlePageChange={handlePageChange} currentPage={currentPage} totalResults={totalResults} cardsPerPage={cardsPerPage} startIndex={startIndex} endIndex={endIndex} />
     </div>
   );
 }
