@@ -10,7 +10,7 @@ export default function FooterInputEmail() {
 
       <div className="block w-full mt-4">
         <div className="flex items-center gap-x-3 space-y-4">
-          <label htmlFor="agree" className="font-base text-gray-700 text-xs leading-10">
+          <label htmlFor="agree" className=" text-gray-500 text-xs ">
             <input id="agree" name="agree" type="checkbox" className="h-4 w-4 mr-2 rounded border-gray-300 text-red-600 focus:ring-red-600" />
             I’m okay with getting emails and having that activity tracked to improve my experience.
           </label>

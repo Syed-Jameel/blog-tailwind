@@ -1,4 +1,3 @@
-import React, { memo } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function Pagination({ handlePageChange, currentPage, totalResults, cardsPerPage, startIndex, endIndex }) {

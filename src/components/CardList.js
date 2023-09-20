@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import Pagination from "./Pagination";
 
 const cardData = [
