@@ -46,13 +46,41 @@ const cardData = [
     title: "Definitive Guide to Make a Daily More Productive Working Flow.",
     href: "/",
   },
+  {
+    id: 7,
+    date: "July 3, 2020",
+    readDuration: "4",
+    title: "Definitive Guide to Make a Daily More Productive Working Flow.",
+    href: "/",
+  },
+  {
+    id: 8,
+    date: "August 4, 2020",
+    readDuration: "8",
+    title: "Ways of Lying to Yourself About Your New Relationship.",
+    href: "/",
+  },
+  {
+    id: 9,
+    date: "August 3, 2020",
+    readDuration: "4",
+    title: "Definitive Guide to Make a Daily More Productive Working Flow.",
+    href: "/",
+  },
+  {
+    id: 10,
+    date: "August 5, 2020",
+    readDuration: "4",
+    title: "Creativo Para Jóvenes: a Designer’s UI/UX Complete Checklist.",
+    href: "/",
+  },
   // More products...
 ];
 
 export default function CardList() {
   const [currentPage, setCurrentPage] = useState(1);
   const totalResults = cardData.length;
-  const cardsPerPage = 2;
+  const cardsPerPage = 5;
 
   // Calculate the index range for the current page
   const startIndex = (currentPage - 1) * cardsPerPage;
@@ -70,11 +98,11 @@ export default function CardList() {
   };
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-4 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 pt-24 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8">
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8">
           {displayedData.map((card) => (
             <div key={card.id} className="group relative">
-              <div className="aspect-h-1  w-full p-4 space-y-3 overflow-hidden rounded-md bg-gray-100 bg-opacity-50 lg:aspect-none group-hover:bg-gray-100 lg:h-48">
+              <div className="aspect-h-1  w-full p-4 space-y-5 overflow-hidden rounded-md bg-gray-100 bg-opacity-50 lg:aspect-none group-hover:bg-gray-100 lg:h-40">
                 <div className="flex justify-between align-middle ">
                   <div>
                     <h3 className="inline-block text-sm font-semibold text-gray-900">{card.date}</h3>

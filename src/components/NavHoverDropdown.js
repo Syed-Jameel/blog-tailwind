@@ -9,20 +9,20 @@ export default function NavHoverDropdown() {
           <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
         </svg>
       </button>
-      <ul className="absolute hidden shadow-lg  text-sm  text-gray-900 rounded-lg pt-4  group-hover:block w-screen  sm:w-[250px]">
+      <ul className="absolute hidden shadow-lg font-semibold text-sm  text-gray-900 rounded-lg pt-3  group-hover:block  min-w-[120px]">
         <li>
           <Link href="/" className="rounded-t bg-white hover:bg-gray-100  hover:text-red-600  py-2 px-4 block whitespace-no-wrap">
-            blog one
+            Blog one
           </Link>
         </li>
         <li>
           <Link href="/" className="bg-white hover:bg-gray-100 hover:text-red-600   py-2 px-4 block whitespace-no-wrap">
-            blog two
+            Blog two
           </Link>
         </li>
         <li>
           <Link href="/" className="rounded-b bg-white hover:bg-gray-100  hover:text-red-600  py-2 px-4 block whitespace-no-wrap">
-            blog three
+            Blog three
           </Link>
         </li>
       </ul>
