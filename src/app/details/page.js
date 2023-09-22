@@ -10,7 +10,7 @@ export default function page() {
     <main className="p-6 min-h-screen">
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="mt-12 sm:mt-2 grid grid-cols-1 lg:grid-cols-3 gap-4">
             <div className="col-span-2  overflow-hidden space-y-14 ">
               <div className="space-y-4 ">
                 <div className="flex justify-between align-middle ">
@@ -23,7 +23,7 @@ export default function page() {
 
                 <h1 className="text-2xl sm:text-5xl font-black text-gray-900 leading-8 tracking-tight">The Highly Contemporary UI/UX Design from a Silicon Valley.</h1>
 
-                <div className="flex justify-between items-start space-x-4 text-sm  w-full sm:w-[60%]">
+                <div className="flex justify-between items-start space-x-2 text-sm  w-full sm:w-[60%]">
                   <div>
                     <Image src={colabrio} widht={50} height={50} alt="colabrio" />
                   </div>
@@ -181,7 +181,7 @@ export default function page() {
                 <p className="text-gray-600 text-sm leading-6 tracking-wide">
                   Just like other pseudo-elements and pseudo-class selectors, <span className="bg-gray-100  px-2 py-1 rounded-md">:not()</span> can be chained with other pseudo-classes and pseudo-elements. For example, the following will add a “New!” word to list items that do not have a <span className="bg-gray-100  px-2 py-1 rounded-md">.old </span>class name, using the <span className="bg-gray-100  px-2 py-1 rounded-md">::after</span> pseudo-element:
                 </p>
-                <div className="flex items-start justify-start gap-x-4">
+                <div className="flex items-start sm:items-center justify-start gap-x-4">
                   <span className="whitespace-nowrap">Tagged with: </span>
                   <div className="space-x-2 space-y-2">
                     <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-semibold py-1 px-2 rounded">Blog</button>

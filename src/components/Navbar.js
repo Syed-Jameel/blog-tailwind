@@ -79,7 +79,7 @@ export default function Navbar() {
             </div>
 
             <Disclosure.Panel className="md:hidden">
-              <div className="space-y-1 px-2 pb-2 pt-2 sm:px-3">
+              <div className="space-y-1 px-2 pb-2 pt-2 sm:px-3 bg-gray-100 ">
                 {/* {navigation.map((item) => (
                   <Disclosure.Button key={item.name} as="a" href={item.href} className={classNames(item.current ? "bg-gray-900 text-white" : "text-black hover:bg-gray-900 hover:text-white", "block rounded-md px-3 py-2 text-base font-medium")} aria-current={item.current ? "page" : undefined}>
                     {item.name}
