@@ -27,6 +27,15 @@ const posts = [
     imageSrc: "https://colabrio.ams3.cdn.digitaloceanspaces.com/stage.clbthemes.com/clb_blog_6-936x1024.jpg",
     imageAlt: "high-quality",
   },
+  {
+    id: 4,
+    date: "August 3, 2020",
+    readDuration: "4",
+    title: "Definitive Guide to Make a Daily More Productive Working Flow.",
+    href: "/",
+    imageSrc: "https://colabrio.ams3.cdn.digitaloceanspaces.com/stage.clbthemes.com/clb_blog_20-min-1323x1536.jpeg",
+    imageAlt: "definitive",
+  },
   // More products...
 ];
 
@@ -35,7 +44,7 @@ export default function Posts() {
     <div className="bg-white">
       <h2 className="text-2xl font-bold tracking-tight text-gray-900">Related Posts</h2>
 
-      <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+      <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         {posts.map((post) => (
           <div key={post.id} className="group relative">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-t-lg bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">

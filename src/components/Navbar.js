@@ -9,14 +9,12 @@ import NavHoverDropdown from "./NavHoverDropdown";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "About", href: "/", current: false },
-  { name: "Team", href: "/", current: false },
-  { name: "Reports", href: "/", current: false },
+  { name: "About", href: "/about", current: false },
+  { name: "Contact us", href: "/conatct", current: false },
+  { name: "Details", href: "/details", current: false },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -38,11 +36,7 @@ export default function Navbar() {
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
-                    {/* {navigation.map((item) => (
-                      <Link key={item.name} href={item.href} className={classNames(item.current ? "bg-gray-900 text-gray-100" : "text-black font-semibold hover:bg-gray-0 hover:text-red-600", "rounded-md px-3 py-2 text-sm font-semibold")} aria-current={item.current ? "page" : undefined}>
-                        {item.name}
-                      </Link>
-                    ))} */}
+
                     <Link href="/" className={`${isActive("/") ? "text-red-600 hover:text-red-500  px-3 py-2 text-sm font-bold" : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
                       Home
                     </Link>
@@ -54,12 +48,10 @@ export default function Navbar() {
                     <Link href="/about" className={`${isActive("/about") ? "text-red-600 hover:text-red-500  px-3 py-2 text-sm font-bold" : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
                       About
                     </Link>
-                    <Link href="/team" className={`${isActive("/team") ? "text-red-600 hover:text-red-500  px-3 py-2 text-sm font-bold" : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
-                      Team
+                    <Link href="/conatct" className={`${isActive("/teaconatctm") ? "text-red-600 hover:text-red-500  px-3 py-2 text-sm font-bold" : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
+                      Contact
                     </Link>
-                    <Link href="/reports" className={`${isActive("/reports") ? "text-red-600 hover:text-red-500  px-3 py-2 text-sm font-bold" : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
-                      Reports
-                    </Link>
+
                     <Link href="/details" className={`${isActive("/details") ? "text-red-600 hover:text-red-500  px-3 py-2 text-sm font-bold" : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
                       Details
                     </Link>
@@ -98,12 +90,10 @@ export default function Navbar() {
                   <Link href="/about" className={`${isActive("/about") ? "text-red-600 hover:text-red-500  px-2 py-2 text-sm font-bold " : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
                     About
                   </Link>
-                  <Link href="/team" className={`${isActive("/team") ? "text-red-600 hover:text-red-500  px-2 py-2 text-sm font-bold " : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
-                    Team
+                  <Link href="/contact" className={`${isActive("/contact") ? "text-red-600 hover:text-red-500  px-2 py-2 text-sm font-bold " : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
+                    Contact
                   </Link>
-                  <Link href="/reports" className={`${isActive("/reports") ? "text-red-600 hover:text-red-500  px-2 py-2 text-sm font-bold " : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
-                    Reports
-                  </Link>
+
                   <Link href="/details" className={`${isActive("/details") ? "text-red-600 hover:text-red-500  px-2 py-2 text-sm font-bold " : "text-black font-semibold hover:bg-gray-0 hover:text-red-600 rounded-md px-3 py-2 text-sm"}`}>
                     Details
                   </Link>

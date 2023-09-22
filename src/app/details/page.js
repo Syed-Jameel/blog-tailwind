@@ -9,40 +9,23 @@ export default function page() {
   return (
     <main className="p-6 min-h-screen">
       <div className="bg-white">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <div className="mt-12 sm:mt-2 grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <div className="col-span-2  overflow-hidden space-y-14 ">
-              <div className="space-y-4 ">
-                <div className="flex justify-between align-middle ">
-                  <div>
-                    <h3 className="inline-block text-sm font-semibold text-gray-900">Digital Marketing</h3>
-                    <span className="px-2 text-red-600 ">&#x2022;</span>
-                    <span className="text-gray-700 text-sm">4 min read</span>
-                  </div>
-                </div>
+        <div className="mx-auto max-w-2xl mt-12 sm:mt-2 px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          
+          <div className="space-y-4 pb-8 sm:pb-6">
 
-                <h1 className="text-2xl sm:text-5xl font-black text-gray-900 leading-8 tracking-tight">The Highly Contemporary UI/UX Design from a Silicon Valley.</h1>
-
-                <div className="flex justify-between items-start space-x-2 text-sm  w-full sm:w-[60%]">
-                  <div>
-                    <Image src={colabrio} widht={50} height={50} alt="colabrio" />
-                  </div>
-                  <div>
-                    <div className="text-gray-600">Author</div>
-                    <div className="text-gray-900 font-bold">Colabrio</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-600">Published</div>
-                    <div className="text-gray-900 font-bold">August 4, 2020</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-600">0 comments</div>
-                    <div className="text-gray-900 font-bold  hover:text-red-600 hover:underline">
-                      <Link href="/">Join the Conversation</Link>
-                    </div>
-                  </div>
-                </div>
+            <div className="flex justify-between align-middle ">
+              <div>
+                <h3 className="inline-block text-sm font-semibold text-gray-900">Digital Marketing</h3>
+                <span className="px-2 text-red-600 ">&#x2022;</span>
+                <span className="text-gray-700 text-sm">4 min read</span>
               </div>
+            </div>
+
+            <h1 className="heading  text-gray-900 tracking-tight" >The Highly Contemporary UI/UX Design from a Silicon Valley.</h1>
+          </div>
+
+          <div className=" sm:py-14 grid grid-cols-1 lg:grid-cols-5 gap-4">
+            <div className="col-span-4  overflow-hidden space-y-14 ">
 
               <div className="space-x-2 text-sm">
                 <Link href="/" className="text-gray-900 font-bold  hover:text-red-600 hover:underline">
@@ -128,7 +111,7 @@ export default function page() {
                     <tr>
                       <th className="w-[150px] ">Employee</th>
                       <th className="w-[150px] ">Salary</th>
-                      <th className="w-[500px] ">&nbsp;</th>
+                      <th className="w-[700px] ">&nbsp;</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -216,15 +199,15 @@ export default function page() {
                   </div>
                 </div>
               </div>
-
-              {/* Related Posts */}
-              <div>
-                <Posts />
-              </div>
             </div>
 
+            {/* Right section */}
             <div className="bg-gray-100 rounded-lg"></div>
           </div>
+
+          {/* Related Posts */}
+          <Posts />
+
         </div>
       </div>
     </main>

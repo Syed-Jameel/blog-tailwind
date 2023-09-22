@@ -11,15 +11,11 @@ const nextConfig = {
         permanent: false,
       },
       {
-        source: "/team",
+        source: "/contact",
         destination: "/",
         permanent: false,
       },
-      {
-        source: "/reports",
-        destination: "/",
-        permanent: false,
-      },
+
     ];
   },
 };

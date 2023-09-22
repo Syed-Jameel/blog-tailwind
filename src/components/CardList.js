@@ -118,8 +118,11 @@ export default function CardList() {
                 </div>
 
                 <p className="text-xl font-bold text-gray-900">{card.title}</p>
+                <div className="space-x-2">
+                  <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-semibold py-1 px-2 rounded">Digital</button>
+                  <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-semibold py-1 px-2 rounded">Marketing</button>
+                </div>
 
-                
               </div>
             </div>
           ))}
